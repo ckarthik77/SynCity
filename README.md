@@ -1,5 +1,3 @@
-Absolutely! Here's a polished and professional version of your README content, formatted for clarity and impact:
-
 ---
 
 # 🚦 **SynCity**  
