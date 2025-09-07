@@ -117,4 +117,3 @@ jobs:
 
 ---
 
-✅ This pipeline ensures **clean repo structure, automated builds, and testing**—making SynCity professional and presentation-ready.
