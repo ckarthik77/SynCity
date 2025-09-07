@@ -116,4 +116,14 @@ jobs:
 * License
 
 ---
-
+⚔️ Google Maps vs SynCity
+Feature/Aspect	Google Maps	SynCity
+Data Source	Historical + crowd-sourced smartphone GPS data	Real-time data from Autonomous Vehicles + Smart Infra
+Traffic Updates	Estimated, delayed	Live, predictive and proactive
+Routing Engine	Static routing with congestion avoidance	Adaptive routing using real-time V2I and congestion prediction
+Vehicle Communication	None	Bidirectional vehicle ↔ infrastructure communication
+Signal Optimization	Not involved	Dynamically controls traffic signals
+Intersection Management	Passive (driver decision)	Cooperative slot-based AV crossing
+Environmental Impact	Neutral	Minimizes emissions and idle time
+City-Level Integration	Standalone app	Fully integrated with smart city ecosystem
+Autonomous Vehicle Support	Not designed for AV-native systems	AV-first, V2I-native architecture
