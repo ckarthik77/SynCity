@@ -130,4 +130,3 @@ jobs:
 
 ---
 
-Let me know if you'd like a logo, architecture diagram, or demo GIFs added next. I can help you generate those too!
