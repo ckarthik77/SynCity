@@ -5,7 +5,7 @@
 
 ## 📂 Repository Structure
 
-```
+
 SynCity/
 │
 ├── docs/                     # Documentation, diagrams, pitch deck
