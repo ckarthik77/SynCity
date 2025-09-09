@@ -1,7 +1,7 @@
 # 🚦 **SynCity**  
 **Synchronized Urban Traffic via AV-Infrastructure Synergy**
 
----
+
 
 ## 📂 Repository Structure
 
