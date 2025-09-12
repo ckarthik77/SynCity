@@ -1,5 +1,3 @@
----
-
 # 🚦 SynCity: Synchronized Urban Traffic via AV-Infrastructure Synergy
 
 **SynCity** is a **smart city traffic simulation and dataset generation framework** built on **SUMO** and Python.
@@ -150,5 +148,3 @@ sumo -c Test/test.sumocfg
 🔥 SynCity is not just a simulation — it’s a **research platform** to bridge the gap between **synthetic simulation data** and **real-world urban traffic intelligence**.
 
 ---
-
-Do you also want me to **embed your GIFs/figures directly in the README** (so they auto-display on GitHub), or keep them just as listed assets?
