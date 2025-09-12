@@ -1,132 +1,136 @@
-# 🚦 **SynCity**  
-**Synchronized Urban Traffic via AV-Infrastructure Synergy**
+🚦 SynCity: Synchronized Urban Traffic via AV-Infrastructure Synergy
 
+SynCity is a smart urban traffic simulation and dataset generation framework. It integrates SUMO (Simulation of Urban Mobility) with Python-based data processing, visualization, and real-time analytics to model intelligent traffic management systems.
 
+This repository contains:
 
-## 📂 Repository Structure
+Traffic simulation setup (network, routes, configs)
 
-```
-SynCity/
+Dataset generation and logging (CSV/Excel)
+
+Visualizations & animations
+
+Comparative analysis with real-world datasets
+
+Presentation material for research dissemination
+
+📂 Repository Structure
+...
+.
+├── Test/                              # SUMO configuration files
+│   ├── test.net.xml                   # Road network (junctions, signals, roads)
+│   ├── test.rou.xml                   # Vehicle trips & flows
+│   ├── test.sumocfg                   # Simulation configuration
 │
-├── docs/                     # Documentation, diagrams, pitch deck
-├── datasets/                 # Collected CSV/JSON traffic data
-├── simulator/                # SUMO/CARLA configs, road networks, routes
-│   ├── sumo/
-│   └── carla/
-├── controller/               # Cloud traffic management logic
-│   ├── api/                  # Flask/FastAPI endpoints for V2I comms
-│   ├── rules_engine/         # Dynamic signal control, routing logic
-│   └── models/               # ML models for congestion prediction
-├── dashboard/                # React.js or Dash visualization UI
-├── scripts/                  # Utility scripts (data logging, dataset cleaning)
-├── tests/                    # Unit/integration tests
-├── requirements.txt          # Python dependencies
-├── package.json              # Frontend dependencies
-├── README.md                 # Project overview, setup guide
-└── LICENSE                   # License file
-```
+├── process/                           # Data processing (future scripts go here)
+│
+├── Presentation/                      # Presentation & research dissemination
+│   ├── google_vs_synCity.py           # Google traffic vs SynCity dataset comparison
+│   ├── synCity_animation.py           # Traffic animation & visualization
+│   ├── synCity_data.csv               # Generated dataset (CSV format)
+│   ├── synCity_realtime_dataset.xlsx  # Real-time structured dataset
+│   ├── synCity_simulator.py           # Main simulation runner (TraCI integration)
+│   ├── synCity_visuals.py             # Data visualization utilities
+│
+├── README.md                          # Project documentation
 
----
+...
 
-## ⚙️ CI/CD Pipeline – GitHub Actions
+✅ Current Progress
 
-**Workflow File:** `.github/workflows/syncity.yml`
+SUMO Setup
 
-```yaml
-name: SynCity CI/CD
+Network (test.net.xml) with multiple intersections and traffic lights.
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+Vehicle flows (test.rou.xml) with defined trips and continuous inflows.
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+Config (test.sumocfg) to run simulation.
 
-    steps:
-    - name: Checkout Code
-      uses: actions/checkout@v3
+Dataset Generation
 
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.10'
+Real-time vehicle logging (CSV & Excel).
 
-    - name: Install Backend Dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
+Attributes: time, vehicle_id, x, y, speed, signal_state, congestion_level, hazard.
 
-    - name: Run Backend Tests
-      run: |
-        pytest tests/
+SynCity dataset stored in synCity_data.csv and synCity_realtime_dataset.xlsx.
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '18'
+Visualization
 
-    - name: Install Frontend Dependencies
-      run: |
-        cd dashboard
-        npm install
+synCity_visuals.py: Plots traffic density, flow over time, and signal interaction.
 
-    - name: Build Frontend
-      run: |
-        cd dashboard
-        npm run build
+synCity_animation.py: Animates vehicle movement across the network.
 
-    - name: Archive Production Build
-      uses: actions/upload-artifact@v3
-      with:
-        name: dashboard-build
-        path: dashboard/build
-```
+Comparative Analysis
+
+google_vs_synCity.py: Benchmarks SynCity dataset against real-world traffic data (Google/Uber).
+
+Presentation Ready
+
+Scripts and structured datasets for research presentations and demonstrations.
+
+⚙️ How to Run
+Run SUMO Simulation
+sumo-gui -c Test/test.sumocfg
 
 
-## 🤝 Contribution Workflow
+or headless mode:
 
-1. **Fork & Clone** the repository  
-2. Create a feature branch:  
-   `git checkout -b feature/<feature-name>`  
-3. Add your code and commit with clear messages  
-4. Push the branch and open a Pull Request  
-5. GitHub Actions will automatically run tests  
-6. Maintainers review and merge
+sumo -c Test/test.sumocfg
 
----
+Run Python Scripts
 
-## 📘 README Structure
+Generate dataset (CSV/Excel):
 
-- **Project Title + Logo**
-- **Abstract / Elevator Pitch**
-- **Key Features**
-- **System Architecture Diagram**
-- **Tech Stack**
-- **Setup Instructions**
-- **Usage Guide**  
-  (Run simulation, launch controller, start dashboard)
-- **Demo Screenshots / GIFs**
-- **Contribution Guidelines**
-- **License**
+python synCity_simulator.py
 
----
 
-## ⚔️ Google Maps vs SynCity
+Visualize results:
 
-| Feature/Aspect              | Google Maps                                         | SynCity                                                  |
-|----------------------------|-----------------------------------------------------|----------------------------------------------------------|
-| **Data Source**            | Historical + crowd-sourced GPS                     | Real-time AV + Smart Infrastructure                      |
-| **Traffic Updates**        | Estimated, delayed                                 | Live, predictive, proactive                              |
-| **Routing Engine**         | Static routing with congestion avoidance           | Adaptive routing via V2I + ML congestion prediction      |
-| **Vehicle Communication**  | None                                               | Bidirectional vehicle ↔ infrastructure                   |
-| **Signal Optimization**    | Not involved                                       | Dynamic signal control                                   |
-| **Intersection Management**| Passive (driver decision)                          | Cooperative slot-based AV crossing                       |
-| **Environmental Impact**   | Neutral                                            | Minimizes emissions and idle time                        |
-| **City-Level Integration** | Standalone app                                     | Integrated smart city ecosystem                          |
-| **AV Support**             | Not designed for AV-native systems                 | AV-first, V2I-native architecture                        |
+python synCity_visuals.py
 
----
 
+Animate traffic flow:
+
+python synCity_animation.py
+
+
+Compare with Google/Uber data:
+
+python google_vs_synCity.py
+
+🌍 Research Applications
+
+Dynamic traffic signal optimization
+
+Predictive routing & congestion forecasting
+
+Violation detection (wrong-way driving, overtaking, etc.)
+
+Real-time urban traffic dashboards
+
+Autonomous Vehicle (AV) – Infrastructure synergy
+
+🔮 Future Work
+
+Expand road network to city-scale environments
+
+Integrate real-world traffic datasets (India-specific, sensor/IoT feeds)
+
+Develop deep learning models for congestion prediction & anomaly detection
+
+Add driver behavior modeling (lane changing, overtaking, wrong-way detection)
+
+Build a live data visualization dashboard for smart cities
+
+Prepare journal paper submission with novel dataset contributions
+
+✨ Authors & Credits
+
+Lead Developer & Researcher: Ch. Karthikeya
+
+Framework: SUMO
+ + Python (TraCI, matplotlib, pandas)
+
+Vision: Create a novel Indian traffic dataset for research in AI-driven urban mobility
+
+🔥 With SynCity, we are building a bridge between simulation and real-world urban traffic management, paving the way for smarter, safer, and more efficient cities.
