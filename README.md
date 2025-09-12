@@ -1,13 +1,3 @@
-Perfect 🔥 — now that I see the **complete repo structure**, including datasets, processing scripts, visuals, GIF demos, and presentation assets, I’ll give you a **comprehensive README.md** that:
-
-* Documents your current **progress**.
-* Explains the **purpose of each file/folder**.
-* Highlights **datasets, GIFs, and visuals**.
-* Covers **future work** (expansion + real-world integration).
-* Looks professional for both **GitHub** and **research submission**.
-
-Here’s your **final polished README**:
-
 ---
 
 # 🚦 SynCity: Synchronized Urban Traffic via AV-Infrastructure Synergy
