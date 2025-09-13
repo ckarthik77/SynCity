@@ -241,7 +241,7 @@ This project employs a comprehensive research methodology combining:
 *Department of Computer Science & Engineering*
 
 ### Academic Supervision
-- **Project Guide**: [Faculty Name]
+- **Project Guide**: [K.Lakshmi Padmavati (Asst Prof)]
 - **Technical Mentor**: [Industry Expert]
 - **Research Advisor**: [Academic Researcher]
 
