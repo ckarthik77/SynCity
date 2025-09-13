@@ -262,8 +262,8 @@ If you use SynCity in your research, please cite:
   title={SynCity: Synchronized Urban Traffic via AV-Infrastructure Synergy},
   author={Karthikeya, Ch.},
   year={2024},
-  note={Final Year Project, Department of Computer Science & Engineering},
-  url={https://github.com/yourusername/syncity}
+  note={Final Year Project, Department of Artificial Intelligence & Data Science},
+  url={https://github.com/ckarthik77/syncity}
 }
 ```
 
@@ -283,7 +283,7 @@ While this is primarily a final year project, contributions and suggestions are 
 
 ## 📞 Contact & Support
 
-**Project Repository**: [https://github.com/yourusername/syncity](https://github.com/yourusername/syncity)  
+**Project Repository**: [https://github.com/ckarthik77/syncity](https://github.com/ckarthik77/syncity)  
 **Email**: karthikeyalucky5585@gmail.com
 **LinkedIn**: [Your LinkedIn Profile]  
 **Project Demo**: [Link to Live Demo]
