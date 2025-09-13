@@ -284,7 +284,7 @@ While this is primarily a final year project, contributions and suggestions are 
 ## 📞 Contact & Support
 
 **Project Repository**: [https://github.com/yourusername/syncity](https://github.com/yourusername/syncity)  
-**Email**: your.email@university.edu  
+**Email**: karthikeyalucky5585@gmail.com
 **LinkedIn**: [Your LinkedIn Profile]  
 **Project Demo**: [Link to Live Demo]
 
