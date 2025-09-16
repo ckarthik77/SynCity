@@ -285,7 +285,7 @@ While this is primarily a final year project, contributions and suggestions are 
 
 **Project Repository**: [https://github.com/ckarthik77/syncity](https://github.com/ckarthik77/syncity)  
 **Email**: karthikeyalucky5585@gmail.com
-**LinkedIn**: [Your LinkedIn Profile]  
+**LinkedIn**: [https://www.linkedin.com/in/karthikeya-chandika]  
 **Project Demo**: [Link to Live Demo]
 
 ---
