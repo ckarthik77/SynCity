@@ -238,7 +238,7 @@ This project employs a comprehensive research methodology combining:
 
 **Lead Researcher & Developer**: Ch. Karthikeya  
 *Final Year B.Tech Student*  
-*Department of Computer Science & Engineering*
+*Department of Artificial Intelligence & Data Science*
 
 ### Academic Supervision
 - **Project Guide**: [K.Lakshmi Padmavati (Asst Prof)]
