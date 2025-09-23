@@ -243,7 +243,6 @@ This project employs a comprehensive research methodology combining:
 ### Academic Supervision
 - **Project Guide**: [K.Lakshmi Padmavati (Asst Prof)]
 - **Technical Mentor**: [Industry Expert]
-- **Research Advisor**: [Academic Researcher]
 
 ### Acknowledgments
 Special thanks to the **SUMO development community**, **Eclipse Foundation**, and **academic advisors** for their invaluable support in making this research possible.
